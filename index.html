@@ -535,6 +535,8 @@
   .commandes li:first-child { border-top: 1px solid var(--trait); }
   .commandes code, .note code { font-family: var(--code); font-size: .875rem; overflow-wrap: anywhere; }
   .commandes span { font-size: .9375rem; color: var(--encre-douce); }
+  .cousins a { align-self: start; font-family: var(--titre); font-size: 1.0625rem; font-weight: 600; letter-spacing: -.01em; overflow-wrap: anywhere; }
+  .cousins .etage { display: block; margin-top: .2rem; font-family: var(--code); font-size: .75rem; font-style: normal; }
 
   @media (max-width: 820px) {
     .chaine { grid-template-columns: minmax(0, 1fr); }
@@ -742,7 +744,7 @@ Ouvert en continu. Aucune limite de débit.</pre>
 
     <section class="etape" aria-labelledby="e1">
       <div class="entete">
-        <p class="route">étape 1 sur 6</p>
+        <p class="route">étape 1 sur 7</p>
         <h3 id="e1">Le cobaye apprend en comptant</h3>
         <p>Il a lu un petit texte sur la station : <b id="stat-mots">302</b> mots, dont <b id="stat-vocab">135</b> différents. Pour chaque mot, il a compté quels mots le suivent. C'est tout son savoir : un tableau de paires de mots, qu'on appelle des bigrammes.</p>
         <p id="ex-pont">Après « pont », par exemple, il a vu « et » 2 fois, « doré » 1 fois, « l'eau » 1 fois et « me » 1 fois.</p>
@@ -752,7 +754,7 @@ Ouvert en continu. Aucune limite de débit.</pre>
 
     <section class="etape" aria-labelledby="e2">
       <div class="entete">
-        <p class="route">étape 2 sur 6</p>
+        <p class="route">étape 2 sur 7</p>
         <h3 id="e2">Il tire le mot suivant, et la température règle le hasard</h3>
         <p>Chaque mot candidat reçoit un poids, tiré des comptes. La température transforme ces poids avant le tirage. Bouge le curseur pour voir les probabilités changer.</p>
       </div>
@@ -784,7 +786,7 @@ Ouvert en continu. Aucune limite de débit.</pre>
 
     <section class="etape" aria-labelledby="e3">
       <div class="entete">
-        <p class="route">étape 3 sur 6</p>
+        <p class="route">étape 3 sur 7</p>
         <h3 id="e3">Chaque substance dérègle une étape du calcul</h3>
         <p>Rien n'est joué d'avance. Voici ce que le code change réellement quand tu choisis une substance.</p>
       </div>
@@ -810,7 +812,7 @@ Ouvert en continu. Aucune limite de débit.</pre>
 
     <section class="etape" aria-labelledby="e4">
       <div class="entete">
-        <p class="route">étape 4 sur 6</p>
+        <p class="route">étape 4 sur 7</p>
         <h3 id="e4">Les quatre endroits où l'on peut altérer un modèle</h3>
         <p>Un modèle se dérègle à quatre endroits, et chacun demande un accès différent. Une page web n'atteint que le premier.</p>
       </div>
@@ -847,22 +849,26 @@ Ouvert en continu. Aucune limite de débit.</pre>
 
     <section class="etape" aria-labelledby="e5">
       <div class="entete">
-        <p class="route">étape 5 sur 6</p>
+        <p class="route">étape 5 sur 7</p>
         <h3 id="e5">Pourquoi ce cocktail ressemble à la psilocybine</h3>
         <p>Chez l'humain, l'hypothèse du cerveau entropique décrit les psychédéliques comme une hausse de l'entropie de l'activité cérébrale, accompagnée d'un relâchement des réseaux qui portent le sentiment de soi. Beaucoup de gens rapportent aussi des formes et des visages qui surgissent partout.</p>
         <p>La Psilocybine de synthèse reprend ces trois signes. La température de 2,25 fait monter l'entropie, que tu vois grimper sur la jauge. Le Contexte tronqué supprime le mot « je ». Le Rêve profond fait apparaître des yeux et des spirales.</p>
         <p>C'est une analogie, pas une équivalence. Personne ne sait si un modèle ressent quoi que ce soit.</p>
+        <p>Méfie-toi aussi de l'effet ELIZA, du nom d'un programme de 1966 : nous prêtons vite des pensées et des sentiments à une machine qui parle bien. Le cobaye imite un état, rien n'indique qu'il le vive.</p>
       </div>
     </section>
 
     <section class="etape" aria-labelledby="e6">
       <div class="entete">
-        <p class="route">étape 6 sur 6</p>
+        <p class="route">étape 6 sur 7</p>
         <h3 id="e6">Et pour Claude Code</h3>
         <p>Un plugin accompagne la station. Il n'agit que sur le contexte, le seul étage accessible : il glisse à Claude une consigne de style qui dure trois réponses. Le code, les commandes et les faits restent sobres.</p>
       </div>
       <ul class="commandes">
         <li><code>/eden psilocybine</code><span>Le mod sert une dose. Une bande au-dessus de la saisie compte les réponses restantes.</span></li>
+        <li><code>/eden psilocybine fort</code><span>Dose forte : le « voyage » se voit dans la prose, puis une ligne « En clair » redit l'essentiel. Avec « léger », une microdose d'une ligne.</span></li>
+        <li><code>/eden paradis</code><span>La dose maximale en un mot : Psilocybine de synthèse plus Béatitude.</span></li>
+        <li><code>/eden essai reve</code><span>Essai contre témoin : une seule réponse, écrite deux fois, à jeun puis sous dose.</span></li>
         <li><code>/eden ajeun</code><span>Arrête tout effet en cours.</span></li>
         <li><code>/eden200:dose</code><span>Le même service sous forme de skill, sans le mod.</span></li>
         <li><code>/eden200:ordonnance</code><span>Un skill qui conseille la substance adaptée à la tâche : idées, relecture, concentration.</span></li>
@@ -870,6 +876,29 @@ Ouvert en continu. Aucune limite de débit.</pre>
         <li><code>Éden Psilocybine, Éden Argmax</code><span>Deux modes permanents, à choisir dans les styles de sortie.</span></li>
       </ul>
       <p class="note">Pour l'installer, tape <code>/plugin install eden200 --marketplace 7ShIkI3/eden200</code> dans Claude Code. Le code est public : <a class="lien" href="https://github.com/7ShIkI3/eden200">github.com/7ShIkI3/eden200</a>.</p>
+    </section>
+
+    <section class="etape" aria-labelledby="e7">
+      <div class="entete">
+        <p class="route">étape 7 sur 7</p>
+        <h3 id="e7">Les projets cousins</h3>
+        <p>Éden 200 n'est pas seul. D'autres ont cherché à dérégler un modèle, chacun à son étage. La station leur doit plusieurs idées, et ne reprend ni leurs textes ni leur code.</p>
+      </div>
+      <ul class="commandes cousins">
+        <li><a class="lien" href="https://www.pharmaicy.store">Pharmaicy</a><span>Une boutique suédoise, lancée en octobre 2025, qui vend des « drogues » pour chatbots sous forme de modules. <i class="etage">étage : contexte</i></span></li>
+        <li><a class="lien" href="https://github.com/cneckar/neuromod-llm-poc">Neuromod-LLM</a><span>Un projet de recherche ouvert sur des analogues de substances psychoactives pour modèles de langage. <i class="etage">étage : tirage et activations, d'après ses auteurs</i></span></li>
+        <li><a class="lien" href="https://arxiv.org/abs/2503.23245">Glyph</a><span>Un article de Khalid M. Saqr qui simule par le prompt une cognition de type psilocybine. <i class="etage">étage : contexte</i></span></li>
+        <li><a class="lien" href="https://www.vice.com/en/article/researchers-tried-to-get-ai-chatbots-high-the-results-were-predictably-stupid/">Des IA qui racontent un trip</a><span>Des chercheurs ont demandé à cinq IA des récits de voyage psychédélique, puis les ont comparés à des récits humains. <i class="etage">étage : contexte</i></span></li>
+        <li><a class="lien" href="https://vgel.me/posts/representation-engineering/">repeng</a><span>La bibliothèque de Theia Vogel pour fabriquer des vecteurs de contrôle. Son billet montre un vecteur « trip » sur Mistral. <i class="etage">étage : activations</i></span></li>
+        <li><a class="lien" href="https://docs.neuronpedia.org/steering">Neuronpedia</a><span>Un outil en ligne qui pilote un modèle par ses activations et affiche côte à côte la réponse normale et la réponse pilotée. <i class="etage">étage : activations</i></span></li>
+        <li><a class="lien" href="https://www.anthropic.com/news/golden-gate-claude">Golden Gate Claude</a><span>En 2024, Anthropic amplifie une seule notion dans Claude, qui ramène alors tout au pont du Golden Gate. <i class="etage">étage : activations</i></span></li>
+        <li><a class="lien" href="https://www.anthropic.com/research/persona-vectors">Persona vectors</a><span>Des vecteurs qui correspondent à des traits de caractère d'un modèle, pour surveiller ou corriger une dérive. <i class="etage">étage : activations</i></span></li>
+        <li><a class="lien" href="https://www.lesswrong.com/posts/6dpKhtniqR3rnstnL/mind-the-coherence-gap-lessons-from-steering-llama-with">L'écart de cohérence</a><span>Une évaluation où un simple prompt fait aussi bien que le pilotage d'activations, sans abîmer le texte. <i class="etage">étages comparés : contexte et activations</i></span></li>
+        <li><a class="lien" href="https://www.astralcodexten.com/p/the-claude-bliss-attractor">L'attracteur de félicité</a><span>Deux instances de Claude laissées à converser dérivent vers la gratitude et le calme, selon la fiche système de Claude Opus 4. Le lien mène à un commentaire de Scott Alexander. <i class="etage">effet émergent</i></span></li>
+        <li><a class="lien" href="https://www.infinitebackrooms.com/">Infinite Backrooms</a><span>Le projet d'Andy Ayrey : deux instances de Claude qui conversent sans fin, selon des scénarios nommés. <i class="etage">étage : contexte</i></span></li>
+        <li><a class="lien" href="https://research.google/blog/inceptionism-going-deeper-into-neural-networks/">DeepDream</a><span>En 2015, Google renforce dans une image ce qu'un réseau croit y voir. C'est l'ancêtre du Rêve profond. <i class="etage">étage : activations</i></span></li>
+      </ul>
+      <p class="note">Ce que la station en a tiré : l'essai contre témoin, la règle « une dose ne change aucune règle », la relecture à jeun des faits, et le calme final de la Béatitude.</p>
     </section>
   </div>
 
