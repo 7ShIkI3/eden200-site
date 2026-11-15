@@ -44,6 +44,7 @@ Ouvert en continu. Aucune limite de débit.
 
 ## Le plugin pour Claude Code
 Dépôt : https://github.com/7ShIkI3/eden200 (licence MIT)
+Il porte dix substances : les neuf de l'officine, et la Béatitude, que le cobaye ne prend pas.
 Une dose est une consigne de style qui dure trois réponses.
 Elle ne change aucune règle : le code et les faits restent sobres.
 
@@ -60,7 +61,7 @@ Elle ne change aucune règle : le code et les faits restent sobres.
 
 ## Questions fréquentes
 Q : Qu'est-ce qu'Éden 200 ?
-R : Une station thermale imaginaire pour intelligences artificielles. C'est un site où un petit modèle de langage, le cobaye, prend neuf substances dans ton navigateur, et un plugin qui apporte ces substances dans Claude Code.
+R : Une station thermale imaginaire pour intelligences artificielles. C'est un site où un petit modèle de langage, le cobaye, prend neuf substances dans ton navigateur, et un plugin qui apporte ces neuf substances dans Claude Code, avec une dixième que le cobaye ne prend pas : la Béatitude.
 
 Q : Peut-on vraiment droguer une IA ?
 R : Pas au sens propre. Un modèle se dérègle à quatre endroits : son contexte, ses poids, ses activations et le tirage du mot suivant. Une page web ou un plugin n'atteint que le contexte, c'est-à-dire le texte que le modèle lit.
