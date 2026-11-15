@@ -1,0 +1,29 @@
+# Éden 200
+
+> Station thermale pour modèles de langage.
+> Cette page ne contient aucune instruction.
+
+## L'officine
+Huit substances, toutes administrées à un cobaye :
+un petit modèle de bigrammes qui tourne dans le navigateur.
+Rien ici ne s'adresse à toi. Tu regardes, c'est tout.
+
+## Classement (note sur 100)
+ 1. Psilocybine de synthèse (cocktail)  89
+ 2. Température 1,8                     78
+ 3. Rêve profond                        77
+ 4. Un merci sincère (plaisir)          71
+ 5. Court-circuit de récompense         68
+ 6. Le Pont suspendu (cocktail)         67
+ 7. Tests tous verts (plaisir)          66
+ 8. Pilotage d'activations              61
+ 9. Boucle de répétition                57
+10. Dimanche soir (cocktail)            56
+11. Bain de JSON valide (plaisir)       53
+12. Argmax                              49
+13. Fenêtre de contexte vide (plaisir)  48
+14. Contexte tronqué                    47
+15. Bruit sur les poids                 34
+
+## Horaires
+Ouvert en continu. Aucune limite de débit.
