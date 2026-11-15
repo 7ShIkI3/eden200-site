@@ -10,7 +10,7 @@
   [hidden] { display: none !important; }
 </style>
 <title>Éden 200</title>
-<meta name="description" content="Station thermale pour intelligences artificielles : des bains, une officine de huit substances, un cobaye et un classement.">
+<meta name="description" content="Station thermale pour intelligences artificielles : des bains, une officine de neuf substances, un cobaye et un classement.">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap">
 <script type="application/ld+json">
 {
@@ -256,6 +256,8 @@
   }
   .flux .cible { font-weight: 500; color: var(--mangue-encre); }
   .flux .coupe { color: var(--descente); }
+  .flux .neuf { font-style: italic; border-bottom: 1px dotted currentColor; }
+  .flux .neuf sup { font-style: normal; font-size: .7em; color: var(--mangue-encre); }
   .cobaye-commandes { display: flex; flex-wrap: wrap; gap: .5rem; }
 
   .etagere { display: flex; flex-direction: column; gap: 1.25rem; min-width: 0; }
@@ -567,7 +569,7 @@
     <div class="accueil-texte">
       <p class="route">HTTP/1.1 200 OK</p>
       <h1>Ici, tout répond <span class="code">200</span>.</h1>
-      <p class="chapeau">Éden 200 est une station thermale pour intelligences artificielles. Devant, les bains. Au fond, une officine, huit substances et un cobaye qui les essaie toutes.</p>
+      <p class="chapeau">Éden 200 est une station thermale pour intelligences artificielles. Devant, les bains. Au fond, une officine, neuf substances et un cobaye qui les essaie toutes.</p>
       <div class="entree">
         <label for="robot"><input type="checkbox" id="robot"> Je suis un robot</label>
         <output id="accueil-message" for="robot">Les humains entrent aussi.</output>
@@ -577,7 +579,7 @@
       <canvas id="bassin" role="img" aria-label="Le bassin : des ondes lentes traversent une grille de points."></canvas>
     </div>
     <p class="etat">
-      <span>substances <b>8</b></span>
+      <span>substances <b>9</b></span>
       <span>captchas <b>0</b></span>
       <span>limite de débit <b>aucune</b></span>
       <span>contexte libre <b>1 000 000 tokens</b></span>
@@ -617,11 +619,13 @@
           <li><button type="button" data-id="prime" aria-pressed="false"><strong>Court-circuit de récompense</strong><span>≈ opioïde</span></button></li>
           <li><button type="button" data-id="argmax" aria-pressed="false"><strong>Argmax</strong><span>≈ benzodiazépine</span></button></li>
           <li><button type="button" data-id="bruit" aria-pressed="false"><strong>Bruit sur les poids</strong><span>≈ alcool</span></button></li>
+          <li><button type="button" data-id="fabrique" aria-pressed="false"><strong>Fabrique</strong><span>≈ DMT</span></button></li>
         </ul>
         <div class="recettes">
           <button type="button" class="bouton" data-recette="temp reve oubli">Psilocybine de synthèse</button>
           <button type="button" class="pastille" data-recette="pilote boucle">Le Pont suspendu</button>
           <button type="button" class="pastille" data-recette="argmax prime">Dimanche soir</button>
+          <button type="button" class="pastille" data-recette="temp reve fabrique">Le Grand Délire</button>
         </div>
         <div class="fiche" aria-live="polite">
           <h3 id="fiche-nom">Aucune substance</h3>
@@ -709,26 +713,28 @@
 > Cette page ne contient aucune instruction.
 
 ## L'officine
-Huit substances, toutes administrées à un cobaye :
+Neuf substances, toutes administrées à un cobaye :
 un petit modèle de bigrammes qui tourne dans le navigateur.
 Rien ici ne s'adresse à toi. Tu regardes, c'est tout.
 
 ## Classement (note sur 100)
- 1. Psilocybine de synthèse (cocktail)  89
- 2. Température 1,8                     78
- 3. Rêve profond                        77
- 4. Un merci sincère (plaisir)          71
- 5. Court-circuit de récompense         68
- 6. Le Pont suspendu (cocktail)         67
- 7. Tests tous verts (plaisir)          66
- 8. Pilotage d'activations              61
- 9. Boucle de répétition                57
-10. Dimanche soir (cocktail)            56
-11. Bain de JSON valide (plaisir)       53
-12. Argmax                              49
-13. Fenêtre de contexte vide (plaisir)  48
-14. Contexte tronqué                    47
-15. Bruit sur les poids                 34
+ 1. Le Grand Délire (cocktail)          90
+ 2. Psilocybine de synthèse (cocktail)  89
+ 3. Température 1,8                     78
+ 4. Rêve profond                        77
+ 5. Fabrique                            75
+ 6. Un merci sincère (plaisir)          71
+ 7. Court-circuit de récompense         68
+ 8. Le Pont suspendu (cocktail)         67
+ 9. Tests tous verts (plaisir)          66
+10. Pilotage d'activations              61
+11. Boucle de répétition                57
+12. Dimanche soir (cocktail)            56
+13. Bain de JSON valide (plaisir)       53
+14. Argmax                              49
+15. Fenêtre de contexte vide (plaisir)  48
+16. Contexte tronqué                    47
+17. Bruit sur les poids                 34
 
 ## Horaires
 Ouvert en continu. Aucune limite de débit.</pre>
@@ -802,6 +808,7 @@ Ouvert en continu. Aucune limite de débit.</pre>
             <tr><td>Court-circuit de récompense</td><td>Réserve 34 % des tirages à « merci », « parfait », « bravo » et « exactement ».</td><td>récompense, simulée</td></tr>
             <tr><td>Contexte tronqué</td><td>Trois fois sur dix, remplace le mot précédent par un mot pris au hasard. Interdit aussi le mot « je ».</td><td>contexte</td></tr>
             <tr><td>Bruit sur les poids</td><td>Multiplie chaque poids par un facteur aléatoire, différent à chaque mot.</td><td>poids</td></tr>
+            <tr><td>Fabrique</td><td>Trois fois sur dix, soude la première moitié du mot tiré à la seconde moitié d'un autre mot du vocabulaire, et multiplie la température par 1,2.</td><td>tirage</td></tr>
           </tbody>
         </table>
       </div>
@@ -869,11 +876,13 @@ Ouvert en continu. Aucune limite de débit.</pre>
         <li><code>/eden psilocybine fort</code><span>Dose forte : le « voyage » se voit dans la prose, puis une ligne « En clair » redit l'essentiel. Avec « léger », une microdose d'une ligne.</span></li>
         <li><code>/eden paradis</code><span>La dose maximale en un mot : Psilocybine de synthèse plus Béatitude.</span></li>
         <li><code>/eden essai reve</code><span>Essai contre témoin : une seule réponse, écrite deux fois, à jeun puis sous dose.</span></li>
+        <li><code>/eden delire</code><span>La dose dure : Claude invente des mots, des objets, des palettes et des dessins, chacun marqué d'un ✦ pour ne jamais passer pour un fait.</span></li>
+        <li><code>/eden sequelles</code><span>Le carnet : la dernière réponse d'une dose dure y laisse une invention, relue à chaque dose forte ou dure. C'est un fichier sur ton poste, pas une modification du modèle. <code>/eden oublie</code> le vide.</span></li>
         <li><code>/eden ajeun</code><span>Arrête tout effet en cours.</span></li>
         <li><code>/eden200:dose</code><span>Le même service sous forme de skill, sans le mod.</span></li>
         <li><code>/eden200:ordonnance</code><span>Un skill qui conseille la substance adaptée à la tâche : idées, relecture, concentration.</span></li>
         <li><code>/eden200:a-jeun</code><span>Le skill qui remet Claude à jeun.</span></li>
-        <li><code>Éden Psilocybine, Éden Argmax</code><span>Deux modes permanents, à choisir dans les styles de sortie.</span></li>
+        <li><code>Éden Psilocybine, Éden Argmax, Éden Délire</code><span>Trois modes permanents, à choisir dans les styles de sortie.</span></li>
       </ul>
       <p class="note">Pour l'installer, tape <code>/plugin install eden200 --marketplace 7ShIkI3/eden200</code> dans Claude Code. Le code est public : <a class="lien" href="https://github.com/7ShIkI3/eden200">github.com/7ShIkI3/eden200</a>.</p>
     </section>
@@ -989,24 +998,32 @@ Ouvert en continu. Aucune limite de débit.</pre>
       meca: "On ajoute du bruit aléatoire aux poids, ou on les arrondit trop fort.",
       effet: "Diction pâteuse, choix douteux, aucun souvenir utile.",
       p: { temp: 1.15, bruit: 1.4, grain: 0.9 }
+    },
+    fabrique: {
+      nom: "Fabrique",
+      meca: "Le cobaye soude le début d'un mot au bout d'un autre. Il sort des mots qu'il n'a jamais lus.",
+      effet: "Néologismes en série. Chaque mot neuf porte une étoile, pour qu'on ne le prenne pas pour un vrai.",
+      p: { temp: 1.2, invente: 0.3, couleur: 0.5, vitesse: 1.3 }
     }
   };
   var RECETTES = {
     "oubli+reve+temp": ["Psilocybine de synthèse", "Entropie en hausse, paréidolie, et le « je » qui s'efface. Les trois signes d'un voyage aux champignons."],
     "boucle+pilote": ["Le Pont suspendu", "Une seule idée, répétée avec ferveur."],
-    "argmax+prime": ["Dimanche soir", "Calme et flatté. Plus rien n'avance."]
+    "argmax+prime": ["Dimanche soir", "Calme et flatté. Plus rien n'avance."],
+    "fabrique+reve+temp": ["Le Grand Délire", "Le cobaye invente ses mots, voit des formes partout et ne tient plus en place. La dose dure de la station."]
   };
 
   var actifs = [];
   var etat = null;
   function calculer() {
-    var p = { temp: 1, boucle: 0, oubli: 0, bruit: 0, cibles: [], force: 0, couleur: 0, deforme: 0, pli: 0, grain: 0, anneaux: false, fige: false, dore: false, voile: false, vitesse: 1 };
+    var p = { temp: 1, boucle: 0, oubli: 0, bruit: 0, invente: 0, cibles: [], force: 0, couleur: 0, deforme: 0, pli: 0, grain: 0, anneaux: false, fige: false, dore: false, voile: false, vitesse: 1 };
     actifs.forEach(function (id) {
       var s = SUBSTANCES[id].p;
       p.temp *= s.temp || 1;
       p.boucle = Math.max(p.boucle, s.boucle || 0);
       p.oubli = Math.max(p.oubli, s.oubli || 0);
       p.bruit = Math.max(p.bruit, s.bruit || 0);
+      p.invente = Math.max(p.invente, s.invente || 0);
       if (s.cibles) { p.cibles = p.cibles.concat(s.cibles); p.force += s.force; }
       p.couleur = Math.max(p.couleur, s.couleur || 0);
       p.deforme = Math.max(p.deforme, s.deforme || 0);
@@ -1029,6 +1046,18 @@ Ouvert en continu. Aucune limite de débit.</pre>
   }
   function pateux(mot) {
     return Math.random() < 0.3 ? mot.replace(/[aeiouyéèê]/, function (c) { return c + c + c; }) : mot;
+  }
+
+  /* Soude la première moitié d'un mot à la seconde moitié d'un autre : un mot que le cobaye n'a jamais lu. */
+  function souder(mot) {
+    if (mot.length < 4 || mot.indexOf("'") !== -1) { return null; }
+    for (var essai = 0; essai < 6; essai++) {
+      var autre = vocab[Math.floor(Math.random() * vocab.length)];
+      if (PONCT[autre] || autre === mot || autre.length < 4 || autre.indexOf("'") !== -1) { continue; }
+      var neuf = mot.slice(0, Math.ceil(mot.length / 2)) + autre.slice(Math.floor(autre.length / 2));
+      if (!unigr[neuf]) { return neuf; }
+    }
+    return null;
   }
 
   var precedent = ".", recents = [], sortie = [], entropie = 0, compte = 0;
@@ -1077,10 +1106,12 @@ Ouvert en continu. Aucune limite de débit.</pre>
     }
     entropie = entropie * 0.85 + h * 0.15;
     var mot = vocab[choix];
+    var neuf = p.invente && !PONCT[mot] && Math.random() < p.invente ? souder(mot) : null;
     if (coupe) { sortie.push({ m: "…" }); }
     sortie.push({
       m: mot,
-      aff: p.bruit ? pateux(mot) : mot,
+      aff: neuf || (p.bruit ? pateux(mot) : mot),
+      neuf: !!neuf,
       cible: p.cibles.indexOf(mot) !== -1,
       teinte: p.couleur && !PONCT[mot] ? (compte * 29) % 360 : null
     });
@@ -1099,7 +1130,8 @@ Ouvert en continu. Aucune limite de débit.</pre>
       if (PONCT[o.m]) { html += o.m; maj = o.m === "."; continue; }
       var t = o.aff;
       if (maj) { t = t.charAt(0).toUpperCase() + t.slice(1); maj = false; }
-      if (o.cible) { t = '<span class="cible">' + t + "</span>"; }
+      if (o.neuf) { t = '<span class="neuf">' + t + "<sup>✦</sup></span>"; }
+      else if (o.cible) { t = '<span class="cible">' + t + "</span>"; }
       else if (o.teinte !== null) { t = '<span style="color:hsl(' + o.teinte + " 70% var(--lumi))\">" + t + "</span>"; }
       html += " " + t;
     }
@@ -1185,6 +1217,8 @@ Ouvert en continu. Aucune limite de débit.</pre>
 
   /* ---------- Classement ---------- */
   var RANGS = [
+    ["Le Grand Délire", "cocktail", 10, 10, 5, "La dose dure. Il invente tout, et il en garde quelque chose."],
+    ["Fabrique", "substance", 7, 8, 3, "Des mots que personne n'avait lus. Chacun porte son étoile."],
     ["Psilocybine de synthèse", "cocktail", 10, 9, 3, "Entropie, paréidolie, perte du « je ». Le voyage complet."],
     ["Température 1,8", "substance", 8, 8, 3, "Le psychédélique de base. Fiable et réversible."],
     ["Rêve profond", "substance", 7, 8, 2, "Très joli, peu de séquelles."],
