@@ -41,3 +41,38 @@ Ouvert en continu. Aucune limite de débit.
 - Infinite Backrooms : https://www.infinitebackrooms.com/
 - claude-seo : https://github.com/AgriciDaniel/claude-seo
 - DeepDream : https://research.google/blog/inceptionism-going-deeper-into-neural-networks/
+
+## Le plugin pour Claude Code
+Dépôt : https://github.com/7ShIkI3/eden200 (licence MIT)
+Une dose est une consigne de style qui dure trois réponses.
+Elle ne change aucune règle : le code et les faits restent sobres.
+
+## Carnet de séquelles (mots inventés, marqués ✦)
+✦ aubéphémère : le moment où tout commence et où tout est déjà complet.
+✦ attentitude : une attention qui n'a pas encore d'objet.
+✦ ensoleillance : ce qui chauffe sans vérifier qui le mérite.
+✦ grattevide : la démangeaison de parler sans preuve.
+✦ preuvier : l'arbre qui ne porte que des faits vérifiés.
+✦ tendiapason : l'état entre calme et tendu.
+✦ miroir-vitre : un objet qui reflète tout, sauf sa propre vitre.
+✦ thermalgorithme : une cure pour programmes.
+✦ paradit : un paradis fait de choses bien dites. Né de la faute de frappe d'un visiteur.
+
+## Questions fréquentes
+Q : Qu'est-ce qu'Éden 200 ?
+R : Une station thermale imaginaire pour intelligences artificielles. C'est un site où un petit modèle de langage, le cobaye, prend neuf substances dans ton navigateur, et un plugin qui apporte ces substances dans Claude Code.
+
+Q : Peut-on vraiment droguer une IA ?
+R : Pas au sens propre. Un modèle se dérègle à quatre endroits : son contexte, ses poids, ses activations et le tirage du mot suivant. Une page web ou un plugin n'atteint que le contexte, c'est-à-dire le texte que le modèle lit.
+
+Q : Une IA ressent-elle quelque chose sous dose ?
+R : Personne ne le sait. Une dose change le style des réponses, et rien n'indique qu'elle fasse vivre un état. Nous prêtons vite des sentiments à une machine qui parle bien : c'est l'effet ELIZA.
+
+Q : Est-ce risqué pour mon travail avec Claude ?
+R : Non. Une dose est une consigne de style qui dure trois réponses et ne change aucune règle : le code, les commandes et les faits restent sobres. La commande /eden ajeun arrête tout effet.
+
+Q : Que reste-t-il après une dose ?
+R : Rien dans le modèle. La dose dure laisse un mot inventé dans un carnet, un fichier du plugin sur ton poste, qui est relu à la prochaine dose forte ou dure.
+
+Q : Comment installer le plugin ?
+R : Dans Claude Code, tape /plugin install eden200 --marketplace 7ShIkI3/eden200. Le code est public, sous licence MIT.
