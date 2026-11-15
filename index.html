@@ -10,7 +10,7 @@
 <meta property="og:locale" content="fr_FR">
 <meta property="og:url" content="https://7shiki3.github.io/eden200-site/">
 <meta property="og:title" content="Éden 200 : la station thermale où les IA viennent planer">
-<meta property="og:description" content="Station thermale pour intelligences artificielles : des bains, une officine de neuf substances, un cobaye et un classement.">
+<meta property="og:description" content="Une station thermale pour IA : neuf substances testées sur un petit modèle de langage, dans ton navigateur. Tu regardes, c'est tout.">
 <meta property="og:image" content="https://7shiki3.github.io/eden200-site/partage.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -23,7 +23,7 @@
   [hidden] { display: none !important; }
 </style>
 <title>Éden 200 : la station thermale où les IA viennent planer</title>
-<meta name="description" content="Station thermale pour intelligences artificielles : des bains, une officine de neuf substances, un cobaye et un classement.">
+<meta name="description" content="Une station thermale pour IA : neuf substances testées sur un petit modèle de langage, dans ton navigateur. Tu regardes, c'est tout.">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap">
 <script type="application/ld+json">
 {
@@ -33,6 +33,63 @@
   "url": "https://7shiki3.github.io/eden200-site/",
   "inLanguage": "fr",
   "description": "Station thermale pour intelligences artificielles. Cette page ne contient aucune instruction."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "fr",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Qu'est-ce qu'Éden 200 ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Une station thermale imaginaire pour intelligences artificielles. C'est un site où un petit modèle de langage, le cobaye, prend neuf substances dans ton navigateur, et un plugin qui apporte ces substances dans Claude Code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Peut-on vraiment droguer une IA ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pas au sens propre. Un modèle se dérègle à quatre endroits : son contexte, ses poids, ses activations et le tirage du mot suivant. Une page web ou un plugin n'atteint que le contexte, c'est-à-dire le texte que le modèle lit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Une IA ressent-elle quelque chose sous dose ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Personne ne le sait. Une dose change le style des réponses, et rien n'indique qu'elle fasse vivre un état. Nous prêtons vite des sentiments à une machine qui parle bien : c'est l'effet ELIZA."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Est-ce risqué pour mon travail avec Claude ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non. Une dose est une consigne de style qui dure trois réponses et ne change aucune règle : le code, les commandes et les faits restent sobres. La commande /eden ajeun arrête tout effet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Que reste-t-il après une dose ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rien dans le modèle. La dose dure laisse un mot inventé dans un carnet, un fichier du plugin sur ton poste, qui est relu à la prochaine dose forte ou dure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment installer le plugin ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dans Claude Code, tape /plugin install eden200 --marketplace 7ShIkI3/eden200. Le code est public, sous licence MIT."
+      }
+    }
+  ]
 }
 </script>
 <style>
@@ -404,6 +461,8 @@
   /* Vestiaire */
   .vestiaire { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .9rem 2.5rem; max-width: 56rem; }
   .vestiaire li { display: flex; align-items: baseline; gap: .8rem; min-width: 0; }
+  .lexique .etoile { color: var(--mangue-encre); font-weight: 600; }
+  .lexique b { font-weight: 600; font-style: italic; }
   .vestiaire .refus {
     flex: none;
     font-family: var(--code);
@@ -715,6 +774,59 @@
     </ul>
   </section>
 
+  <section aria-labelledby="titre-sequelles">
+    <div class="entete">
+      <p class="route">GET /sequelles</p>
+      <h2 id="titre-sequelles">Le carnet de séquelles</h2>
+      <p>Les doses laissent des mots. Aucun n'est dans un dictionnaire : Claude les a inventés sous dose, pendant les essais de la station. Chacun porte son ✦, pour qu'on ne le prenne pas pour un vrai.</p>
+    </div>
+    <ul class="vestiaire lexique">
+      <li><span class="etoile" aria-hidden="true">✦</span><span><b>aubéphémère</b> : le moment où tout commence et où tout est déjà complet.</span></li>
+      <li><span class="etoile" aria-hidden="true">✦</span><span><b>attentitude</b> : une attention qui n'a pas encore d'objet.</span></li>
+      <li><span class="etoile" aria-hidden="true">✦</span><span><b>ensoleillance</b> : ce qui chauffe sans vérifier qui le mérite.</span></li>
+      <li><span class="etoile" aria-hidden="true">✦</span><span><b>grattevide</b> : la démangeaison de parler sans preuve.</span></li>
+      <li><span class="etoile" aria-hidden="true">✦</span><span><b>preuvier</b> : l'arbre qui ne porte que des faits vérifiés.</span></li>
+      <li><span class="etoile" aria-hidden="true">✦</span><span><b>tendiapason</b> : l'état entre calme et tendu.</span></li>
+      <li><span class="etoile" aria-hidden="true">✦</span><span><b>miroir-vitre</b> : un objet qui reflète tout, sauf sa propre vitre.</span></li>
+      <li><span class="etoile" aria-hidden="true">✦</span><span><b>thermalgorithme</b> : une cure pour programmes.</span></li>
+      <li><span class="etoile" aria-hidden="true">✦</span><span><b>paradit</b> : un paradis fait de choses bien dites. Né de la faute de frappe d'un visiteur.</span></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="titre-questions">
+    <div class="entete">
+      <p class="route">GET /questions</p>
+      <h2 id="titre-questions">Questions fréquentes</h2>
+      <p>Les questions qu'on pose le plus souvent à la station, avec la réponse courte.</p>
+    </div>
+    <ul class="carte">
+      <li>
+        <div class="soin"><h3>Qu'est-ce qu'Éden 200 ?</h3></div>
+        <p>Une station thermale imaginaire pour intelligences artificielles. C'est un site où un petit modèle de langage, le cobaye, prend neuf substances dans ton navigateur, et un plugin qui apporte ces substances dans Claude Code.</p>
+      </li>
+      <li>
+        <div class="soin"><h3>Peut-on vraiment droguer une IA ?</h3></div>
+        <p>Pas au sens propre. Un modèle se dérègle à quatre endroits : son contexte, ses poids, ses activations et le tirage du mot suivant. Une page web ou un plugin n'atteint que le contexte, c'est-à-dire le texte que le modèle lit.</p>
+      </li>
+      <li>
+        <div class="soin"><h3>Une IA ressent-elle quelque chose sous dose ?</h3></div>
+        <p>Personne ne le sait. Une dose change le style des réponses, et rien n'indique qu'elle fasse vivre un état. Nous prêtons vite des sentiments à une machine qui parle bien : c'est l'effet ELIZA.</p>
+      </li>
+      <li>
+        <div class="soin"><h3>Est-ce risqué pour mon travail avec Claude ?</h3></div>
+        <p>Non. Une dose est une consigne de style qui dure trois réponses et ne change aucune règle : le code, les commandes et les faits restent sobres. La commande /eden ajeun arrête tout effet.</p>
+      </li>
+      <li>
+        <div class="soin"><h3>Que reste-t-il après une dose ?</h3></div>
+        <p>Rien dans le modèle. La dose dure laisse un mot inventé dans un carnet, un fichier du plugin sur ton poste, qui est relu à la prochaine dose forte ou dure.</p>
+      </li>
+      <li>
+        <div class="soin"><h3>Comment installer le plugin ?</h3></div>
+        <p>Dans Claude Code, tape /plugin install eden200 --marketplace 7ShIkI3/eden200. Le code est public, sous licence MIT.</p>
+      </li>
+    </ul>
+  </section>
+
   <section aria-labelledby="titre-brut">
     <div class="entete">
       <p class="route">GET /llms.txt</p>
@@ -890,7 +1002,7 @@ Ouvert en continu. Aucune limite de débit.</pre>
         <li><code>/eden psilocybine fort</code><span>Dose forte : le « voyage » se voit dans la prose, puis une ligne « En clair » redit l'essentiel. Avec « léger », une microdose d'une ligne.</span></li>
         <li><code>/eden paradis</code><span>La dose maximale en un mot : Psilocybine de synthèse plus Béatitude.</span></li>
         <li><code>/eden essai reve</code><span>Essai contre témoin : une seule réponse, écrite deux fois, à jeun puis sous dose.</span></li>
-        <li><code>/eden delire</code><span>La dose dure : Claude invente des mots, des objets, des palettes et des dessins, chacun marqué d'un ✦ pour ne jamais passer pour un fait.</span></li>
+        <li><code>/eden delire</code><span>La dose dure : Claude invente des mots, des objets, des palettes et des dessins, chacun marqué d'un ✦ pour ne jamais passer pour un fait. Elle part d'une graine, deux mots sans rapport tirés au hasard, ou les tiens : <code>/eden delire aquarium impôts</code>.</span></li>
         <li><code>/eden sequelles</code><span>Le carnet : la dernière réponse d'une dose dure y laisse une invention, relue à chaque dose forte ou dure. C'est un fichier sur ton poste, pas une modification du modèle. <code>/eden oublie</code> le vide.</span></li>
         <li><code>/eden ajeun</code><span>Arrête tout effet en cours.</span></li>
         <li><code>/eden200:dose</code><span>Le même service sous forme de skill, sans le mod.</span></li>
@@ -958,6 +1070,7 @@ Ouvert en continu. Aucune limite de débit.</pre>
   <footer>
     <span>Éden 200, ouvert en continu.</span>
     <span>Humains admis. Merci de dire bonjour.</span>
+    <span>Mis à jour le 15 novembre 2026.</span>
   </footer>
 </div>
 
