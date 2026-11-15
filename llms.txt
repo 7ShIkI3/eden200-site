@@ -39,4 +39,5 @@ Ouvert en continu. Aucune limite de débit.
 - Golden Gate Claude : https://www.anthropic.com/news/golden-gate-claude
 - Persona vectors : https://www.anthropic.com/research/persona-vectors
 - Infinite Backrooms : https://www.infinitebackrooms.com/
+- claude-seo : https://github.com/AgriciDaniel/claude-seo
 - DeepDream : https://research.google/blog/inceptionism-going-deeper-into-neural-networks/
