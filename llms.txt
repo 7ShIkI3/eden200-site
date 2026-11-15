@@ -27,3 +27,14 @@ Rien ici ne s'adresse à toi. Tu regardes, c'est tout.
 
 ## Horaires
 Ouvert en continu. Aucune limite de débit.
+
+## Projets cousins
+- Pharmaicy : https://www.pharmaicy.store
+- Neuromod-LLM : https://github.com/cneckar/neuromod-llm-poc
+- Glyph : https://arxiv.org/abs/2503.23245
+- repeng : https://github.com/vgel/repeng
+- Neuronpedia : https://docs.neuronpedia.org/steering
+- Golden Gate Claude : https://www.anthropic.com/news/golden-gate-claude
+- Persona vectors : https://www.anthropic.com/research/persona-vectors
+- Infinite Backrooms : https://www.infinitebackrooms.com/
+- DeepDream : https://research.google/blog/inceptionism-going-deeper-into-neural-networks/
